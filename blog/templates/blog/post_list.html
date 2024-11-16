@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Django Girls</title>
+    
+    <style>
+        /* Variáveis para o tema dark */
+        :root {
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --header-bg-color: #1f1f1f;
+            --post-bg-color: #1e1e1e;
+            --border-color: #333;
+            --link-color: #b633c7;
+            --link-hover-color: #0c0c0c;
+            --footer-bg-color: #1a1a1a;
+        }
+
+        /* Estilo do corpo */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: var(--header-bg-color);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 2em;
+        }
+
+        header h1 a:hover {
+            color: var(--link-hover-color);
+        }
+
+        /* Estilo para os posts */
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: var(--post-bg-color);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .post .date {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+
+        .post h2 a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .post h2 a:hover {
+            color: var(--link-hover-color);
+        }
+
+        .post p {
+            line-height: 1.6;
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: var(--footer-bg-color);
+            text-align: center;
+            padding: 15px;
+            color: #777;
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Blog Django Girls</a></h1>
+    </header>
+
+    <main>
+        <section class="post">
+            <p class="date">Publicado: 14.06.2014, 12:14</p>
+            <h2><a href="#">primeiro post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </section>
+
+        <section class="post">
+            <p class="date">Publicado: 14.06.2014, 12:14</p>
+            <h2><a href="#">segundo post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </section>
+
+        <section class="post">
+            <p class="date">Publicado: 15.06.2014, 10:05</p>
+            <h2><a href="#">Outro post </a></h2>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog Django Girls. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
